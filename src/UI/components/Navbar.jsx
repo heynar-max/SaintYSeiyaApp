@@ -10,6 +10,7 @@ export const Navbar = () => {
                     <img className="navbar_logo" src={logo}/>
                 </Link>
                 <div className="navbar-navigation">
+
                     <NavLink 
                         className={ ({isActive}) => `nav-item   ${ isActive ? 'active':'' }` } 
                         to="/bronze"
@@ -22,6 +23,13 @@ export const Navbar = () => {
                         to="/gold"
                     >
                         Gold
+                    </NavLink>
+
+                    <NavLink 
+                        className={ ({isActive}) => `nav-item   ${ isActive ? 'active':'' }` }
+                        to="/search"
+                    >
+                        Search
                     </NavLink>
                 </div>
         </nav>
