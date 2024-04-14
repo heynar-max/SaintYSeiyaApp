@@ -2,6 +2,8 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import '../../style/SearchPage.css';
 import queryString from 'query-string';
 import { useForm } from '../../hooks/useForm';
+import { getHeroesByName } from '../helpers';
+import { SaintCard } from '../components/SaintCard';
 
 
 export const SearchPage = () => {
@@ -13,9 +15,10 @@ export const SearchPage = () => {
     const location = useLocation();
 
     const { q = '' } = queryString.parse( location.search );
+    const saints = getHeroesByName(q)
 
     const { searchText, onInputChange } = useForm({
-        searchText: ''
+        searchText: q
     });
 
     const onSearchSubmit = (event) =>{
@@ -40,7 +43,7 @@ export const SearchPage = () => {
                     >
                         <input 
                             type="text"
-                            placeholder="Search a hero"
+                            placeholder="Busca el nombre del caballero"
                             className="form-control"
                             name="searchText"
                             autoComplete="off"
@@ -62,7 +65,13 @@ export const SearchPage = () => {
                     <div className='search_alert_danger'>
                         No hay Resultados <b className="b_saint"> {q} </b>
                     </div>
-                    {/* <SaintCard/> */}
+                    <div className='search_cards'>
+                        {
+                        saints.map( saint => (
+                            <SaintCard key= {saint.id} {...saint}/> 
+                        ))
+                    }
+                        </div>
                 </div>
             </div>
 
