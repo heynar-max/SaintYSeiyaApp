@@ -1,0 +1,47 @@
+.nav_header{
+    background-color: var(--segundo-color);
+    border-bottom-style: inset;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    margin: auto;
+    position: sticky;
+    align-items: center;
+    top: 0;
+    z-index: 1;
+    padding: 1rem;
+    
+}
+.navbar_logo{
+    width: 150px;
+}
+
+
+.navbar-navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-item{
+    display: flex;
+    margin-right: 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    list-style: none;
+    margin-left: 20px;
+    padding: 6px 15px;
+    color: #feffff;
+    border-radius: 20px;
+}
+
+.nav-item.active {
+    color: var(--primer-color); /* Cambia el color de texto cuando el enlace esté activo */
+    font-weight: bold; /* Cambia el peso de la fuente cuando el enlace esté activo */
+    background: var(--sexto-color);  /* son los bordes */
+}
+
+.nav-item:hover {
+    color: var(--cuarto-color); /* Cambia el color de texto cuando el enlace activo se está volviendo a pasar por encima */
+    background: var(--sexto-color);  /* son los bordes */
+}

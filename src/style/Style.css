@@ -1,0 +1,17 @@
+
+:root{
+    --primer-color: #ffffff;
+    --segundo-color: #2a5b70;
+    --tercer-color: #6a6a6a;
+    --cuarto-color: #ffd900;
+    /* --quinto-color: linear-gradient(#345, rgb(50, 53, 71)); */
+    --sexto-color: #112434;
+}
+
+body{
+margin: 0px;
+padding: 0;
+/* background: var(--quinto-color); */
+background: var(--primer-color);
+height: 100vh;
+}
