@@ -36,7 +36,8 @@ animaciones solo se pone en el index.html\
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />`
-
+se usa query-string query parameters para la busqueda\
+`npm install query-string`\
 
 ## Colores de la aplicación
 Fondo de la pantalla : `#ffffff`\
