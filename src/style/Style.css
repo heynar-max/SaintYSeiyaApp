@@ -8,6 +8,8 @@
     --sexto-color: #112434;
     --alert-blue: #07befb4d;
     --alert-danger: #f856564d;
+    --color-light-grey: #E6E6E6;
+    --color-dark-grey: #7B7B7B;
 }
 
 * {
@@ -35,7 +37,7 @@ h4 {
     color: #FFF;
 }
 h2 {
-    color: #FFF;
+    color: var(--sexto-color);
 }
 p {
     font-size: 1em;
@@ -47,6 +49,9 @@ p {
     padding: 2rem;
 }
 
+.home_signo{
+margin: 1rem ;
+}
 .login_container{
     padding: 3rem;
 }
