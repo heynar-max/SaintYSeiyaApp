@@ -7,12 +7,13 @@ import { useContext } from "react";
 
 export const Navbar = () => {
 
-    const { user } = useContext(AuthContext);
+    const { user, logout } = useContext(AuthContext);
 
     // hook navegación
     const navigate = useNavigate();
 
     const onLogout = () => {
+        logout();
         navigate('/login', {
             // objecto replace para que reemplaze la ruta donde se encuentra
             replace: true
