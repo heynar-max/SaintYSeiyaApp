@@ -1,9 +1,13 @@
 import {  Link, NavLink, useNavigate} from "react-router-dom"
 import '../../style/Navbar.css'
 import logo from '../../assets/saint.png'
+import { AuthContext } from "../../auth/context/AuthContext";
+import { useContext } from "react";
 
 
 export const Navbar = () => {
+
+    const { user } = useContext(AuthContext);
 
     // hook navegación
     const navigate = useNavigate();
@@ -43,6 +47,13 @@ export const Navbar = () => {
                         Search
                     </NavLink>
 
+                    <span
+                        className='span_login'
+                    >
+                        {/* ? si en null no continue  */}
+                        { user?.name}
+                    </span>
+                    
                     <button
                         className="onlogout_botton"
                         onClick={ onLogout }

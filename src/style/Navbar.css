@@ -68,3 +68,8 @@
     color: var(--cuarto-color); /* Cambia el color de texto cuando el enlace activo se está volviendo a pasar por encima */
     background: var(--sexto-color);  /* son los bordes */
 }
+
+.span_login{
+    color: var(--primer-color);
+    margin-right: 1rem;
+}
