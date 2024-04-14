@@ -1,11 +1,19 @@
 import { getSaintByRango } from "../helpers"
 import PropTypes from 'prop-types';
 import { SaintCard } from "./";
+import { useMemo } from "react";
 
 
 export const SaintList = ({ rango }) => {
 
-    const saints = getSaintByRango( rango )
+    // memorizar los valores 
+    // useMemo para memorizar valores
+    // useCallback para momerizar funciones
+    // callBack () => getSaintById( id )
+    // [ rango] son las dependecias
+    const saints = useMemo ( () => getSaintByRango( rango ), [ rango])
+
+
     return (
         <div className="cards__card">
             {

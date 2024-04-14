@@ -1,6 +1,7 @@
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { getSaintById } from "../helpers";
 import '../../style/SaintPage.css'
+import { useMemo } from "react";
 
 
 export const SaintPage = () => {
@@ -9,7 +10,12 @@ export const SaintPage = () => {
     // hook navegación
     const navigate = useNavigate();
 
-    const saint = getSaintById( id );
+    // memorizar los valores 
+    // useMemo para memorizar valores
+    // useCallback para momerizar funciones
+    // callBack () => getSaintById( id )
+    // [ id] son las dependecias
+    const saint = useMemo( () => getSaintById( id ), [ id] );
 
     const onNavigateBack = () => {
         navigate(-1);
