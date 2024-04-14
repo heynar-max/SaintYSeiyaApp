@@ -45,6 +45,7 @@
     cursor: pointer; /* Cambiar a un cursor de puntero */
     border-radius: 8px; /* Radio de borde para hacerlo redondeado */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Sombra */
+    margin-bottom: 4rem;
 }
 .boton_saint:hover{
     background-color: var(--sexto-color); /* Color de fondo al pasar el ratón */

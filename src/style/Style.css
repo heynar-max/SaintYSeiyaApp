@@ -4,7 +4,7 @@
     --segundo-color: #2a5b70;
     --tercer-color: #6a6a6a;
     --cuarto-color: #ffd900;
-    /* --quinto-color: linear-gradient(#345, rgb(50, 53, 71)); */
+    --quinto-color: #ffbb00;
     --sexto-color: #112434;
     --alert-blue: #07befb4d;
     --alert-danger: #f856564d;
@@ -47,6 +47,7 @@ p {
 
 .router_container{
     padding: 2rem;
+    
 }
 
 .home_signo{
@@ -104,5 +105,6 @@ margin: 1rem ;
 @media (max-width: 900px){
     .cards__card{
         grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 5REM;
     }
 }

@@ -11,10 +11,14 @@ export const LoginPage = () => {
     const navigate = useNavigate();
 
     const onLogin = () => {
-        const lastPath = localStorage.getItem('lastPath') || '/';
+        // cuando vaya a ingresar a la pagina y quede donde estaba la ultima vez
+
+        // const lastPath = localStorage.getItem('lastPath') || '/';
+
         login( 'Saint' );
         
-        navigate(lastPath, {
+        // navigate(lastPath, {
+        navigate('/', {
             replace: true
         });
     }
@@ -29,6 +33,7 @@ export const LoginPage = () => {
                     >
                         login
                 </button>
+                <h5>Esta informacion es extraida de Saint Seiya Wiki</h5>
             </div>
             
         </div>

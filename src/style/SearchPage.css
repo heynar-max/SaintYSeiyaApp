@@ -28,7 +28,7 @@
     border-radius: 5px;
     display: flex;
     align-items: center;
-    color: var(--quinto-color)
+    color: var(--sexto-color)
 }
 .search_alert_danger{
     background-color: var(--alert-danger);
