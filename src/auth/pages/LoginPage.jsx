@@ -1,14 +1,19 @@
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom"
+import { AuthContext } from "../context/AuthContext";
 
 
 export const LoginPage = () => {
+
+    const { login } = useContext( AuthContext )
 
     // hook navegación
     const navigate = useNavigate();
 
     const onLogin = () => {
+        login( 'Saint' );
+        
         navigate('/', {
-            // objecto replace para que reemplaze la ruta donde se encuentra
             replace: true
         });
     }
