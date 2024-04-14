@@ -1,0 +1,102 @@
+.main_container{
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    border-radius: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+.h1_saint{
+    margin-bottom: 4rem;
+}
+.saint_image{
+    width: 350px;
+    border-radius: 15px;
+    object-fit: initial;
+}
+.saint_rigth{
+    width: 80%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.b_saint{
+    font-weight: 800;
+    
+}
+
+.h3-saint{
+    margin: 1rem 0 1rem 0;
+    color: var(--sexto-color);
+}
+
+.boton_saint{
+    background-color: var(--sexto-color); /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 15px 32px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como un bloque en línea */
+    font-size: 16px; /* Tamaño del texto */
+    margin: 20px 2px; /* Margen exterior */
+    transition-duration: 0.4s; /* Duración de la transición */
+    cursor: pointer; /* Cambiar a un cursor de puntero */
+    border-radius: 8px; /* Radio de borde para hacerlo redondeado */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Sombra */
+}
+.boton_saint:hover{
+    background-color: var(--sexto-color); /* Color de fondo al pasar el ratón */
+    color: var(--cuarto-color); /* Color del texto al pasar el ratón */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Sombra al pasar el ratón */
+}
+.boton_saint:active{
+    background-color: #3e8e41; /* Color de fondo al hacer clic */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Sombra al hacer clic */
+    transform: translateY(2px); /* Cambiar la posición al hacer clic */
+}
+.saint_figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem;
+}
+
+@media (max-width: 900px){
+    .main_container{
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 400px;
+        justify-items: center;
+    }
+}
+@media (max-width: 525px){
+    .saint_image{
+        width: 250px;
+    }
+    .saint_rigth{
+        width: 60%;
+    }
+    .h3-saint{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 450px){
+    .saint_image{
+        width: 250px;
+    }
+    .saint_rigth{
+        width: 70%;
+    }
+}
+@media (max-width: 370px){
+    .saint_image{
+        width: 200px;
+    }
+    .saint_rigth{
+        width: 70%;
+    }
+    .h1_saint{
+        font-size: 1.5rem;
+    }
+}
