@@ -6,6 +6,8 @@
     --cuarto-color: #ffd900;
     /* --quinto-color: linear-gradient(#345, rgb(50, 53, 71)); */
     --sexto-color: #112434;
+    --alert-blue: #07befb4d;
+    --alert-danger: #f856564d;
 }
 
 * {

@@ -28,13 +28,13 @@ de sitios y aplicaciones web
 
 ## Bibliotecas usadas en la Aplicación
 Enrutamiento a una aplicación web de React\
-`npm i react-router-dom@v6.22.3`
+`npm i react-router-dom@v6.22.3`\
 se usa react-icons para los iconos de la aplicación\
-`npm install react-icons`
+`npm install react-icons`\
 animaciones solo se pone en el index.html\
-`<link\
-      rel="stylesheet"\
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"\
+`<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />`
 
 
