@@ -22,14 +22,15 @@ configuración para que se puede usar en pantallas pequeñas
 
 
 ## Css
-Cuenta con CSS puro, no se usa bibliotecas multiplataforma\
+Cuenta con CSS, no se usa bibliotecas multiplataforma\
 o conjunto de herramientas de código abierto para diseño\
 de sitios y aplicaciones web
-
 
 ## Bibliotecas usadas en la Aplicación
 Enrutamiento a una aplicación web de React\
 `npm i react-router-dom@v6.22.3`
+se usa react-icons para los iconos de la aplicación\
+`npm install react-icons`
 
 
 ## Colores de la aplicación

@@ -1,20 +1,22 @@
 import { getSaintByRango } from "../helpers"
 import PropTypes from 'prop-types';
+import { SaintCard } from "./";
 
 
 export const SaintList = ({ rango }) => {
 
     const saints = getSaintByRango( rango )
     return (
-        <ul>
+        <div className="cards__card">
             {
                 saints.map( saint => (
-                    <li key={saint.id}>
-                        {saint.caballero}
-                    </li>
+                    <SaintCard
+                        key={saint.id}
+                        {...saint}
+                    />
                 ))
             }
-        </ul>
+        </div>
     )
 }
 

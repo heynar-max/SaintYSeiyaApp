@@ -44,7 +44,7 @@ export const Navbar = () => {
                     </NavLink>
 
                     <button
-                        className="nav-item nav-link btn"
+                        className="onlogout_botton"
                         onClick={ onLogout }
                     >
                         Logout

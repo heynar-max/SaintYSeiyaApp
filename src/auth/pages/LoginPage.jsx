@@ -13,15 +13,18 @@ export const LoginPage = () => {
         });
     }
     return (
-        <>
-        <h1>Login</h1>
-        <hr/>
-
-        <button
-        onClick={ onLogin }
-        >
-            Login
-        </button>
-        </>
+        <div className="login_container">
+            <h1>login</h1>
+            <hr/>
+            <div className="login_content">
+                <button
+                    className="login_botton"
+                    onClick={ onLogin }
+                    >
+                        login
+                </button>
+            </div>
+            
+        </div>
     )
 }

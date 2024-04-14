@@ -1,2 +1,3 @@
 
-export * from './SaintList'
+export * from './SaintList';
+export * from './SaintCard';

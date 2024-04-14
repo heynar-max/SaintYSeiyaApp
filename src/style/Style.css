@@ -8,6 +8,12 @@
     --sexto-color: #112434;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
 margin: 0px;
 padding: 0;
@@ -15,6 +21,81 @@ padding: 0;
 background: var(--primer-color);
 height: 100vh;
 }
+
+h1{
+    color: var(--sexto-color);
+}
+h3 {
+    font-size: 1.8em;
+    color: #FFF;
+}
+h4 {
+    color: #FFF;
+}
+h2 {
+    color: #FFF;
+}
+p {
+    font-size: 1em;
+    color: #FFF;
+    font-weight: 300;
+}
+
 .router_container{
     padding: 2rem;
+}
+
+.login_container{
+    padding: 3rem;
+}
+.login_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login_botton{
+    background-color: var(--sexto-color); /* Color de fondo */
+    color: var(--primer-color); /* Color del texto */
+    padding: 15px 32px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como un bloque en línea */
+    font-size: 16px; /* Tamaño del texto */
+    margin: 20px 2px; /* Margen exterior */
+    transition-duration: 0.4s; /* Duración de la transición */
+    cursor: pointer; /* Cambiar a un cursor de puntero */
+    border-radius: 8px; /* Radio de borde para hacerlo redondeado */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Sombra */
+    font-weight: bold; /* fuente mas gruesa */
+}
+.login_botton:hover{
+    background-color: var(--segundo-color); /* Color de fondo */
+    color: var(--cuarto-color); /* Color del texto */
+}
+
+.cards__card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    grid-gap: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+
+@media (max-width: 1700px){
+    .cards__card{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 1500px){
+    .cards__card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 900px){
+    .cards__card{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
