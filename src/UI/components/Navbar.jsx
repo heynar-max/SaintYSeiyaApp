@@ -1,9 +1,20 @@
-import {  Link, NavLink} from "react-router-dom"
+import {  Link, NavLink, useNavigate} from "react-router-dom"
 import '../../style/Navbar.css'
 import logo from '../../assets/saint.png'
 
 
 export const Navbar = () => {
+
+    // hook navegación
+    const navigate = useNavigate();
+
+    const onLogout = () => {
+        navigate('/login', {
+            // objecto replace para que reemplaze la ruta donde se encuentra
+            replace: true
+        });
+    }
+
     return (
         <nav className="nav_header">
                 <Link to="/">
@@ -31,6 +42,13 @@ export const Navbar = () => {
                     >
                         Search
                     </NavLink>
+
+                    <button
+                        className="nav-item nav-link btn"
+                        onClick={ onLogout }
+                    >
+                        Logout
+                    </button>
                 </div>
         </nav>
     )
