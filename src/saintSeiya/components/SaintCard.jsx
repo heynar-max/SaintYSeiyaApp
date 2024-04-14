@@ -12,7 +12,7 @@ export const SaintCard = ( {
         peso,
 }) => {
 
-  const saintClass = `${rango}-hp`
+  const saintClass = `${rango}`
     return (
         <>
           <div >
